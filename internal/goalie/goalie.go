@@ -2,6 +2,7 @@ package goalie
 
 import (
 	"context"
+	"github.com/go-redis/redis/v8"
 
 	error2 "github.com/quanxiang-cloud/cabin/error"
 	time2 "github.com/quanxiang-cloud/cabin/time"
