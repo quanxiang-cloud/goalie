@@ -1,0 +1,43 @@
+# port 端口
+# e.g :80
+port: :80
+
+# model 模式 debug|release
+# debug模式，可以输出更加详细的日志，但是运行速度会减慢
+model: debug
+
+#  -------------------- log --------------------
+# comply with zap log specification
+log:
+  level: -1
+  development: false
+  sampling:
+    initial: 100
+    thereafter: 100
+  outputPath:
+    - stderr
+  errorOutputPath:
+    - stderr
+
+#  -------------------- internalNet --------------------
+internalNet:
+  timeout: 20
+  maxIdleConns: 10
+
+# -------------------- mysql --------------------  
+mysql:
+  host: 192.168.200.18:3306
+  db: re_goalie
+  user: root
+  password: uyWxtvt6gCOy3VPLB3rTpa0rQ
+  log: true
+
+redis:
+  addrs:
+    - 192.168.200.18:6379
+    - 192.168.200.19:6379
+    - 192.168.200.20:6379
+  username:
+  password:
+
+
